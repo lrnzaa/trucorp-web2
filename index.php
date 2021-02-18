@@ -17,7 +17,7 @@ else
  {
    echo "[ID] " . $row["ID"] . "<br>";
    echo "[Nama] " . $row["Nama"] . "<br>";
-   echo "[Kantor (Pusat/Cabang)] " . $row["Kantor"];
+   echo "[Kantor (Pusat/Cabang)] " . $row["Kantor"] . "<br>";
  }
 }
 
