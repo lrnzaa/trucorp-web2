@@ -2,9 +2,23 @@
 
 $link = mysqli_connect("172.19.0.2", "root", "abcde", "trucorp");
 
-$query = mysql_query("SELECT COUNT(*) FROM users");
+$query = "SELECT * FROM users";
+$result = $link->query($query);
 
 echo "Count total: <br>";
-echo mysql_result($result, 0);
+
+if(!$link)
+{
+ exit;
+}
+
+$count = 0;
+
+foreach($result as $row)
+{
+ $count += 1;
+}
+
+echo $count;
 
 ?>
