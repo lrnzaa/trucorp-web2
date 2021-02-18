@@ -10,7 +10,7 @@ RUN chmod 774 -R /var/www/html
 RUN chown -R www-data:www-data /var/www
 RUN chown -R www-data:www-data /var/www/html
 
-COPY index.php /var/www/html
+COPY count.php /var/www/html
 
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-enable mysqli
