@@ -5,9 +5,7 @@ EXPOSE 80
 RUN apt-get update
 RUN apt-get install nano
 
-RUN chmod 774 -R /var/www
 RUN chmod 774 -R /var/www/html
-RUN chown -R www-data:www-data /var/www
 RUN chown -R www-data:www-data /var/www/html
 
 COPY count.php /var/www/html
